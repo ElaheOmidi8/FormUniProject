@@ -52,3 +52,18 @@ Book-Club-Project/
 * Commit ID: xxxxxxxx
 
 ---
+### Maryam Badakhshan
+
+* Developed additional styles (`style2.css`).
+* Implemented responsive design and hover effects.
+* Worked on the **style2-page** branch.
+* **Commit ID:** `xxxxxxxx`
+
+---
+
+# 🚀 How to Run
+
+1. Download or clone the repository.
+2. Open the project folder.
+3. Run `index.html` in your browser.
+4. Test the Login and Register forms.
