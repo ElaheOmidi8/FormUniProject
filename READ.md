@@ -52,3 +52,34 @@ Book-Club-Project/
 * Commit ID: xxxxxxxx
 
 ---
+### Shima Moradi
+
+* Developed the JavaScript functionality (`script.js`).
+* Implemented switching between the Login and Register forms.
+* Added form validation and error handling.
+* Worked on the **js-page** branch.
+* **Commit ID:** `xxxxxxxx`
+
+---
+
+# 🌿 Git Workflow
+
+1. The Team Leader created the GitHub repository.
+2. Team members cloned the repository.
+3. Each member created a separate branch.
+4. Each member completed the assigned task.
+5. Changes were added using `git add`.
+6. Changes were committed using `git commit`.
+7. Branches were pushed to GitHub using `git push`.
+8. Each member created a Pull Request.
+9. The Team Leader reviewed and merged all Pull Requests into the `main` branch.
+
+---
+
+# ✅ Project Status
+
+Project completed successfully.
+
+**Project Completion Date:** `1404/04/25`
+
+**Developed by the Book Club Team**
