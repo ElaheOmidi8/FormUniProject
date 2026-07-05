@@ -1,0 +1,256 @@
+/* ============================================================
+   استایل‌های تکمیلی و ریسپانسیو بوک‌کلاب
+   توسعه‌دهنده: مریم بدخشان
+   ============================================================ */
+
+/* ===== انیمیشن‌های ورود ===== */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.container {
+  animation: fadeInUp 0.6s ease-out;
+}
+
+/* ===== هور اثر روی دکمه‌ها ===== */
+.btn-submit {
+  position: relative;
+  overflow: hidden;
+}
+
+.btn-submit::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  transition: width 0.6s, height 0.6s;
+}
+
+.btn-submit:active::after {
+  width: 300px;
+  height: 300px;
+}
+
+/* ===== افکت روی اینپوت‌ها ===== */
+.form-group input {
+  transition: all 0.3s ease;
+}
+
+.form-group input:focus {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(139, 111, 76, 0.1);
+}
+
+/* ===== هور اثر روی کارت ===== */
+.container {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.container:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.08);
+}
+
+/* ===== افکت روی آیکون‌های اجتماعی ===== */
+.social-login a {
+  transition: all 0.3s ease;
+}
+
+.social-login a:hover {
+  transform: translateY(-3px) scale(1.05);
+  box-shadow: 0 4px 12px rgba(139, 111, 76, 0.15);
+}
+
+/* ===== استایل اسکرول ===== */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f5f2ed;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #8b6f4c;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #6d563a;
+}
+
+/* ===== RESPONSIVE (ریسپانسیو) ===== */
+
+/* تبلت و موبایل بزرگ */
+@media (max-width: 768px) {
+  .header {
+    padding: 12px 20px;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .nav-links {
+    gap: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .container {
+    padding: 30px 20px;
+    max-width: 400px;
+  }
+  
+  .footer {
+    padding: 12px 20px;
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .footer .social i {
+    margin: 0 8px;
+  }
+  
+  .form-title h2 {
+    font-size: 1.4rem;
+  }
+}
+
+/* موبایل کوچک */
+@media (max-width: 480px) {
+  .container {
+    padding: 20px 15px;
+    border-radius: 15px;
+  }
+  
+  .form-title h2 {
+    font-size: 1.2rem;
+  }
+  
+  .form-title p {
+    font-size: 0.75rem;
+  }
+  
+  .tabs {
+    gap: 5px;
+    padding: 3px;
+  }
+  
+  .tab-btn {
+    font-size: 0.8rem;
+    padding: 8px 5px;
+  }
+  
+  .form-group input {
+    padding: 9px 12px;
+    font-size: 0.85rem;
+  }
+  
+  .btn-submit {
+    padding: 10px;
+    font-size: 0.85rem;
+  }
+  
+  .social-login a {
+    width: 36px;
+    height: 36px;
+    font-size: 0.8rem;
+  }
+  
+  .footer {
+    font-size: 0.7rem;
+    padding: 10px 15px;
+  }
+  
+  .footer .social i {
+    font-size: 0.9rem;
+    margin: 0 6px;
+  }
+  
+  .logo {
+    font-size: 1.1rem;
+  }
+  
+  .nav-links a {
+    font-size: 0.8rem;
+  }
+}
+
+/* تبلت عمودی */
+@media (min-width: 481px) and (max-width: 768px) {
+  .container {
+    max-width: 380px;
+    padding: 35px 25px;
+  }
+}
+
+/* صفحه‌های بسیار بزرگ */
+@media (min-width: 1200px) {
+  .container {
+    max-width: 500px;
+    padding: 50px 45px;
+  }
+  
+  .form-title h2 {
+    font-size: 2rem;
+  }
+  
+  .form-group input {
+    padding: 14px 18px;
+    font-size: 1rem;
+  }
+  
+  .btn-submit {
+    padding: 14px;
+    font-size: 1rem;
+  }
+}
+
+/* ===== پرینت ===== */
+@media print {
+  .header,
+  .footer,
+  .social-login,
+  .divider {
+    display: none;
+  }
+  
+  .container {
+    box-shadow: none;
+    border: 1px solid #ddd;
+  }
+}
+
+/* ===== انتخاب متن ===== */
+::selection {
+  background: #8b6f4c;
+  color: #fff;
+}
+
+::-moz-selection {
+  background: #8b6f4c;
+  color: #fff;
+}
