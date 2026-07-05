@@ -1,0 +1,329 @@
+﻿/* ============================================================
+   استایل‌های اصلی بوک‌کلاب
+   طراح: فاطمه حسن‌پور
+   ============================================================ */
+
+/* ===== RESET ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Vazirmatn', sans-serif;
+    background: #f5f2ed;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* ===== HEADER ===== */
+.header {
+    background: #fff;
+    padding: 15px 40px;
+    border-bottom: 1px solid #eee9e1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.logo {
+    font-size: 1.3rem;
+    font-weight: 300;
+    color: #2d2a24;
+}
+
+    .logo span {
+        font-weight: 700;
+        color: #8b6f4c;
+    }
+
+.nav-links {
+    display: flex;
+    gap: 25px;
+    list-style: none;
+}
+
+    .nav-links a {
+        text-decoration: none;
+        color: #555;
+        font-size: 0.9rem;
+        transition: 0.3s;
+    }
+
+        .nav-links a:hover {
+            color: #8b6f4c;
+        }
+
+        .nav-links a.active {
+            color: #8b6f4c;
+            font-weight: 500;
+        }
+
+/* ===== MAIN ===== */
+.main {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 20px;
+}
+
+.container {
+    width: 100%;
+    max-width: 450px;
+    background: #fff;
+    border-radius: 20px;
+    padding: 40px 35px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.06);
+}
+
+/* ===== FORM TITLE ===== */
+.form-title {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+    .form-title h2 {
+        font-weight: 300;
+        font-size: 1.6rem;
+        color: #2d2a24;
+    }
+
+        .form-title h2 span {
+            font-weight: 700;
+            color: #8b6f4c;
+        }
+
+    .form-title p {
+        color: #999;
+        font-size: 0.85rem;
+        margin-top: 4px;
+    }
+
+/* ===== TABS ===== */
+.tabs {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 25px;
+    background: #f5f2ed;
+    border-radius: 12px;
+    padding: 4px;
+}
+
+.tab-btn {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    background: transparent;
+    border-radius: 10px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    font-family: 'Vazirmatn', sans-serif;
+    color: #888;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+    .tab-btn.active {
+        background: #fff;
+        color: #8b6f4c;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+    }
+
+    .tab-btn:hover {
+        color: #8b6f4c;
+    }
+
+/* ===== FORMS ===== */
+.form {
+    display: none;
+}
+
+    .form.active {
+        display: block;
+    }
+
+.form-group {
+    margin-bottom: 16px;
+}
+
+    .form-group label {
+        display: block;
+        font-size: 0.8rem;
+        font-weight: 500;
+        color: #555;
+        margin-bottom: 4px;
+    }
+
+    .form-group input {
+        width: 100%;
+        padding: 11px 14px;
+        border: 1px solid #e8e0d6;
+        border-radius: 10px;
+        font-size: 0.9rem;
+        font-family: 'Vazirmatn', sans-serif;
+        background: #faf8f5;
+        transition: 0.3s;
+        direction: rtl;
+    }
+
+        .form-group input:focus {
+            outline: none;
+            border-color: #8b6f4c;
+            background: #fff;
+        }
+
+        .form-group input.error {
+            border-color: #e74c3c;
+            background: #fef6f5;
+        }
+
+.error-msg {
+    color: #e74c3c;
+    font-size: 0.75rem;
+    display: block;
+    margin-top: 3px;
+    min-height: 18px;
+}
+
+.form-options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.8rem;
+    margin: 12px 0 18px;
+}
+
+    .form-options label {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        color: #777;
+        cursor: pointer;
+    }
+
+    .form-options a {
+        color: #8b6f4c;
+        text-decoration: none;
+    }
+
+        .form-options a:hover {
+            text-decoration: underline;
+        }
+
+.btn-submit {
+    width: 100%;
+    padding: 12px;
+    background: #8b6f4c;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    font-size: 0.95rem;
+    font-weight: 500;
+    font-family: 'Vazirmatn', sans-serif;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+    .btn-submit:hover {
+        background: #6d563a;
+    }
+
+    .btn-submit:active {
+        transform: scale(0.98);
+    }
+
+/* ===== DIVIDER ===== */
+.divider {
+    text-align: center;
+    margin: 18px 0;
+    color: #ccc;
+    font-size: 0.8rem;
+    position: relative;
+}
+
+    .divider::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 50%;
+        width: 44%;
+        height: 1px;
+        background: #e8e0d6;
+    }
+
+    .divider::after {
+        content: '';
+        position: absolute;
+        right: 0;
+        top: 50%;
+        width: 44%;
+        height: 1px;
+        background: #e8e0d6;
+    }
+
+/* ===== SOCIAL LOGIN ===== */
+.social-login {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+    .social-login a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 42px;
+        height: 42px;
+        border-radius: 50%;
+        border: 1px solid #e8e0d6;
+        color: #888;
+        text-decoration: none;
+        transition: 0.3s;
+        font-size: 0.9rem;
+    }
+
+        .social-login a:hover {
+            border-color: #8b6f4c;
+            color: #8b6f4c;
+            background: #f5f2ed;
+        }
+
+/* ===== FOOTER ===== */
+.footer {
+    background: #fff;
+    padding: 15px 40px;
+    border-top: 1px solid #eee9e1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    font-size: 0.8rem;
+    color: #999;
+}
+
+    .footer .social i {
+        font-size: 1.1rem;
+        margin-right: 15px;
+        color: #bbb;
+        transition: 0.3s;
+        cursor: default;
+    }
+
+        .footer .social i:hover {
+            color: #8b6f4c;
+        }
+
+    .footer a {
+        color: #8b6f4c;
+        text-decoration: none;
+    }
+
+        .footer a:hover {
+            text-decoration: underline;
+        }
