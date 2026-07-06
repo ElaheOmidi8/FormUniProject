@@ -11,7 +11,7 @@ This project is a simple and modern Login & Register page for a Book Club websit
 | Name              | Role                             | Branch        | Commit ID  |
 | ----------------- | -------------------------------- | ------------- | ---------- |
 | Elahe Omidi       | HTML Structure (`index.html`)    | html-page     | xxxxxxxx   |
-| Fatemeh Hasanpour | Main Styles (`style1.css`)       | style1-page   | xxxxxxxx   |
+| Fatemeh Hasanpour | Main Styles (`style1.css`)       | style1-page   | 178a800    |
 | Maryam Badakhshan | Additional Styles (`style2.css`) | style2-page   | xxxxxxxx   |
 | Shima Moradi      | JavaScript (`script.js`)         | JavaScript      | xxxxxxxx   |
 
@@ -51,13 +51,17 @@ Book-Club-Project/
 * Worked on the html-page branch.
 * Commit ID: xxxxxxxx
 
+<<<<<<< HEAD
 
 ---
-### Fatemeh Hassanpour
+
+
+### Fatemeh Hasanpour
 
  Designed the main stylesheet (`style1.css`).
  Styled colors, typography, buttons, and forms.
  Worked on the *style1-page branch.
+<<<<<<< HEAD
  *Commit ID:* `xxxxxxxx`
  ---
 
@@ -107,3 +111,6 @@ Project completed successfully.
 **Project Completion Date:** `1404/04/15`
 
 **Developed by the Book Club Team**
+=======
+ *Commit ID:* `178a800`
+>>>>>>> c25d2f3fca80348dec01db6e7ad4e2344bfde8cc
