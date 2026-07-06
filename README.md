@@ -53,14 +53,14 @@ Book-Club-Project/
 
 
 ---
-### Fatemeh Hasanpour
+### Fatemeh Hassanpour
 
  Designed the main stylesheet (`style1.css`).
  Styled colors, typography, buttons, and forms.
  Worked on the *style1-page branch.
  *Commit ID:* `xxxxxxxx`
  ---
- 
+
 ### Maryam Badakhshan
 
 * Developed additional styles (`style2.css`).
